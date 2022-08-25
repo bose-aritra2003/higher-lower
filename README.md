@@ -14,18 +14,24 @@ This is my first FLASK application made in python.<br>
 * Everytime you guess a number, you will be told whether your guessed number is higher, lower or equal to the correct number
 
 ## How to run ?
-1. Download this project
-2. Install python3 on your computer
-3. Open terminal/command-prompt in the project folder
+1. Install python3 on your computer https://www.python.org/downloads/
+2. Clone this repository on your local system
+3. Open terminal/command-prompt and navigate to this cloned repository
 4. Run the following commands:
 
-    * On Linux/Mac
+    * On Linux/MacOS
     ```
+    python3 -m venv myvenv
+    myvenv/bin/activate
+    pip install Flask
     export FLASK_APP=server.py
     flask run
     ```
     * On Windows
     ```
+    py -3 -m venv myvenv
+    myvenv\Scripts\activate
+    pip install Flask
     set FLASK_APP=server.py
     flask run
     ```
